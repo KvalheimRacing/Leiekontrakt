@@ -1,0 +1,69 @@
+% Also try the document class 'amsart'.
+\documentclass[a4paper, oneside, onecolumn, 11pt, notitlepage, reqno]{article}
+
+% Load preamble
+\usepackage{kvalheimracing}
+\usepackage[lmargin=2cm, rmargin=2cm, tmargin=2cm, bmargin=2cm]{geometry}
+
+% Hyperref setup
+\hypersetup{pdfauthor={Eirik Kvalheim}}
+\hypersetup{pdftitle ={Document Title}}
+
+\title{Leiekontrakt for utleie av Næringslokale}
+\author{Hjeravegen 999}
+\date{Mai, 2020}
+
+%\setcounter{secnumdepth}{3}
+
+%\renewcommand*\contentsname{Innhold}
+\renewcommand\maketitlehooka{\null\mbox{}\vfill}
+\renewcommand\maketitlehookd{\vfill\null}
+\renewcommand{\figurename}{Vedlegg}
+
+\newcommand{\namesig}[2][7cm]{
+  \begin{tabular}{@{}p{#1}@{}}
+	#2 \\\\[2\normalbaselineskip] \noindent\rule{7cm}{0.4pt} \\[0pt]
+	{\small \textit{Navn med blokkbokstaver}} \\\\[2\normalbaselineskip] \noindent\rule{7cm}{0.4pt} \\[0pt]
+	{\small \textit{Signatur}}
+  \end{tabular}
+}
+
+
+\begin{document}
+
+	\begin{titlingpage}
+		\maketitle
+	\end{titlingpage}
+
+%	\tableofcontents
+
+	\input{Sections/PARTENE}
+	\input{Sections/EIENDOM}
+	\input{Sections/LEIEOBJEKT}
+	\input{Sections/LEIETAKERS_VIRKSOMHET}
+	\input{Sections/OVERTAKELSE}
+	\input{Sections/LEIETID}
+	\input{Sections/LEIESUM}
+	\input{Sections/LEIETAKERS_BENYTTELSE_AV_LEIEOBJEKTET}
+	\input{Sections/UTLEIERS_ADGANG_TIL_LEIEOBJEKTET}
+	\input{Sections/UTLEIERS_VEDLIKEHOLDSPLIKT}
+	\input{Sections/LEIETAKERS_VEDLIKEHOLDSPLIKT}
+	\input{Sections/UTLEIERS_ENDRING_AV_LEIEOBJEKTET}
+	\input{Sections/LEIETAKERS_ENDRING_AV_LEIEOBJEKTET}
+	\input{Sections/FORSIKRING}
+	\input{Sections/BRANN_ELLER_DESTRUKSJON}
+	\input{Sections/UTLEIERS_AVTALEBRUDD}
+	\input{Sections/LEIETAKERS_AVTALEBRUDD}
+	\input{Sections/FRAFLYTTING}
+	\input{Sections/DEPOSITUM}
+	\input{Sections/FREMLEIE}
+	\input{Sections/OVERDRAGELSE}
+	\input{Sections/SAERLIGE_BESTEMMELSER}
+	\input{Sections/FORHOLDET_TIL_HUSLEIELOVEN}
+    \input{Sections/LOVVALG_OG_TVISTELOSNING}
+	\input{Sections/VEDLEGG_TIL_KONTRAKTEN}
+	\input{Sections/SIGNATUR}
+    \input{BILDER_TIL_VEDLEGG}
+
+
+\end{document}
